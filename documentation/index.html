@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Physics Intelligence Engine – Documentation Index</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 2rem 3rem;
+      background: #0b1020;
+      color: #e7ecff;
+    }
+    h1, h2, h3 {
+      color: #f5f7ff;
+      margin-top: 2rem;
+    }
+    a {
+      color: #7fd0ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      margin-bottom: 1.5rem;
+      padding: 1rem 1.25rem;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .section h2 {
+      margin-top: 0;
+    }
+    ul {
+      margin: 0.5rem 0 0.5rem 1.5rem;
+    }
+    code {
+      background: rgba(255, 255, 255, 0.06);
+      padding: 0.1rem 0.3rem;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    .tagline {
+      font-size: 0.95rem;
+      opacity: 0.8;
+      margin-top: 0.25rem;
+    }
+    .pill {
+      display: inline-block;
+      padding: 0.1rem 0.5rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      background: rgba(127, 208, 255, 0.12);
+      border: 1px solid rgba(127, 208, 255, 0.4);
+      color: #cfeaff;
+      margin-left: 0.5rem;
+    }
+    .toc {
+      margin-bottom: 2rem;
+      padding: 1rem 1.25rem;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .toc ul {
+      margin-left: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Physics Intelligence Engine</h1>
+    <div class="tagline">
+      11‑layer, schema‑driven, DAG‑based physics understanding stack: metrics → capabilities → regimes → scenarios.
+    </div>
+  </header>
+
+  <section class="toc">
+    <h2>Table of Contents</h2>
+    <ul>
+      <li><a href="#core-engine">1. Core Engine</a></li>
+      <li><a href="#atomic-packs">2. Atomic Measurement Packs</a></li>
+      <li><a href="#composite-packs">3. Composite Measurement Packs</a></li>
+      <li><a href="#capability-libraries">4. Capability Libraries</a></li>
+      <li><a href="#regime-packs">5. Regime Packs</a></li>
+      <li><a href="#regime-timeline">6. Regime Timeline Engine</a></li>
+      <li><a href="#regime-explanations">7. Regime Explanation Pack</a></li>
+      <li><a href="#scenario-classification">8. Scenario Classification Layer</a></li>
+      <li><a href="#consolidated-pack">9. Consolidated Pack</a></li>
+      <li><a href="#metadata">10. Project Metadata</a></li>
+      <li><a href="#dev-utilities">11. Developer Utilities</a></li>
+    </ul>
+  </section>
+
+  <section id="core-engine" class="section">
+    <h2>1. Core Engine<span class="pill">Core</span></h2>
+    <ul>
+      <li><strong>Measurement DAG</strong> – <code>src/core/measurement-dag.ts</code></li>
+      <li><strong>Capability Engine</strong> – <code>src/core/capability-engine.ts</code></li>
+      <li><strong>Regime Classifier</strong> – <code>src/core/regime-classifier.ts</code></li>
+      <li><strong>Transition Detector</strong> – <code>src/core/transition-detector.ts</code></li>
+    </ul>
+  </section>
+
+  <section id="atomic-packs" class="section">
+    <h2>2. Atomic Measurement Packs</h2>
+    <ul>
+      <li><strong>Atomic Operations Pack</strong> – <code>plugins/atomic_operations/</code></li>
+      <li><strong>Atomic Field Component Pack</strong> – <code>plugins/atomic_field_components/</code></li>
+    </ul>
+  </section>
+
+  <section id="composite-packs" class="section">
+    <h2>3. Composite Measurement Packs</h2>
+    <h3>3.1 Thermodynamic Composites</h3>
+    <ul>
+      <li><code>plugins/thermodynamic_composites/</code></li>
+      <li>Temperature from EOS, specific internal energy, enthalpy, entropy proxy, sound speed.</li>
+    </ul>
+    <h3>3.2 Transport Composites</h3>
+    <ul>
+      <li><code>plugins/transport_composites/</code></li>
+      <li>Viscosity, resistive diffusion, conduction flux, viscous/ohmic heating.</li>
+    </ul>
+    <h3>3.3 Kinematic Composites</h3>
+    <ul>
+      <li><code>plugins/kinematic_composites/</code></li>
+      <li>Divergence, vorticity, shear, strain, gradient magnitude.</li>
+    </ul>
+    <h3>3.4 Radiation Composites</h3>
+    <ul>
+      <li><code>plugins/radiation_composites/</code></li>
+      <li>Radiation pressure, energy density, flux, cooling, optical depth, Eddington factor.</li>
+    </ul>
+  </section>
+
+  <section id="capability-libraries" class="section">
+    <h2>4. Capability Libraries</h2>
+    <h3>4.1 Thermodynamic</h3>
+    <ul>
+      <li><code>plugins/thermodynamic_capability_library/</code></li>
+      <li>Temperature, entropy, enthalpy, sound‑speed regimes.</li>
+    </ul>
+    <h3>4.2 Transport</h3>
+    <ul>
+      <li><code>plugins/transport_capability_library/</code></li>
+      <li>Viscosity, resistivity, conduction, dissipation regimes.</li>
+    </ul>
+    <h3>4.3 Kinematic</h3>
+    <ul>
+      <li><code>plugins/kinematic_capability_library/</code></li>
+      <li>Divergence, vorticity, shear, deformation regimes.</li>
+    </ul>
+    <h3>4.4 Radiation</h3>
+    <ul>
+      <li><code>plugins/radiation_capability_library/</code></li>
+      <li>Radiation pressure, optical depth, cooling, Eddington, flux regimes.</li>
+    </ul>
+    <h3>4.5 Coupling</h3>
+    <ul>
+      <li><code>plugins/coupling_capability_library/</code></li>
+      <li>MHD–fluid, fluid–radiation, total coupling strength.</li>
+    </ul>
+  </section>
+
+  <section id="regime-packs" class="section">
+    <h2>5. Regime Packs</h2>
+    <ul>
+      <li><strong>Base Regime Pack</strong> – <code>plugins/regimes/base/</code></li>
+      <li><strong>Coupling Regime Pack</strong> – <code>plugins/regimes/coupling/</code></li>
+      <li><strong>Thermodynamic Regimes</strong> – <code>plugins/regimes/thermodynamic/</code></li>
+      <li><strong>Transport Regimes</strong> – <code>plugins/regimes/transport/</code></li>
+      <li><strong>Kinematic Regimes</strong> – <code>plugins/regimes/kinematic/</code></li>
+      <li><strong>Radiation Regimes</strong> – <code>plugins/regimes/radiation/</code></li>
+    </ul>
+  </section>
+
+  <section id="regime-timeline" class="section">
+    <h2>6. Regime Timeline Engine</h2>
+    <ul>
+      <li><code>plugins/regime_timeline/engine.ts</code></li>
+      <li>Epoch construction, durations, transitions, summary statistics.</li>
+    </ul>
+  </section>
+
+  <section id="regime-explanations" class="section">
+    <h2>7. Regime Explanation Pack</h2>
+    <ul>
+      <li><code>plugins/regime_explanations/regime-explanation-engine.ts</code></li>
+      <li><code>plugins/regime_explanations/explanations/*.json</code></li>
+      <li>Short/long templates, transition‑aware narratives.</li>
+    </ul>
+  </section>
+
+  <section id="scenario-classification" class="section">
+    <h2>8. Scenario Classification Layer</h2>
+    <ul>
+      <li><code>plugins/scenario_classification/scenario-classifier.ts</code></li>
+      <li><code>plugins/scenario_classification/scenarios/*.json</code></li>
+      <li>Shocks, reconnection, turbulence, collapse, jets; confidence + explanations.</li>
+    </ul>
+  </section>
+
+  <section id="consolidated-pack" class="section">
+    <h2>9. Consolidated Pack<span class="pill">Orchestrator</span></h2>
+    <ul>
+      <li><code>physics_intelligence_pack/package.json</code></li>
+      <li><code>physics_intelligence_pack/src/index.ts</code></li>
+      <li>Single entrypoint: state → metrics → capabilities → regimes → timeline → explanations → scenarios.</li>
+    </ul>
+    <h3>Minimal Usage</h3>
+    <pre><code>import { PhysicsIntelligencePack } from "physics_intelligence_pack";
+
+const engine = new PhysicsIntelligencePack({ /* config */ });
+
+const result = engine.run({
+  timestamp: "...",
+  fields: { /* raw state */ }
+});
+
+const timeline = engine.finalizeTimeline();</code></pre>
+  </section>
+
+  <section id="metadata" class="section">
+    <h2>10. Project Metadata</h2>
+    <ul>
+      <li><strong>Version:</strong> USM‑v1.0</li>
+      <li><strong>Architecture:</strong> 11‑Layer Physics Intelligence Stack</li>
+      <li><strong>Schema:</strong> JSON‑Schema 2020‑12</li>
+      <li><strong>Execution Model:</strong> DAG‑based measurement evaluation</li>
+    </ul>
+  </section>
+
+  <section id="dev-utilities" class="section">
+    <h2>11. Developer Utilities</h2>
+    <ul>
+      <li><strong>Plugin scaffolding</strong> – <code>tools/scaffold-plugin.ts</code></li>
+      <li><strong>Schema validator</strong> – <code>tools/validate-schema.ts</code></li>
+      <li><strong>Test harness</strong> – <code>tests/e2e/</code></li>
+      <li><strong>Synthetic scenario generator</strong> – <code>tools/generate-synthetic-scenarios.ts</code></li>
+    </ul>
+  </section>
+</body>
+</html>
