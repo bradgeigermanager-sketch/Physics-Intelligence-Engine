@@ -1,0 +1,178 @@
+Here’s the **authoritative, unified, schema‑driven Table of Contents** for the *entire Physics Intelligence Engine*, fully aligned with the HTML index you provided — but now expressed as a **formal project ToC artifact** you can use as the backbone for documentation, code generation, and pack‑level scaffolding.
+
+This is **ToC‑v2.0**, matching the index exactly, but reorganized into a **canonical manifest** with stable IDs, namespaces, and build order.
+
+---
+
+# **Physics Intelligence Engine — Unified Table of Contents (ToC‑v2.0)**  
+11‑layer, schema‑driven, DAG‑based physics understanding stack: metrics → capabilities → regimes → scenarios.
+
+---
+
+## **1. Core Engine**
+- **Measurement DAG** — `src/core/measurement-dag.ts`  
+- **Capability Engine** — `src/core/capability-engine.ts`  
+- **Regime Classifier** — `src/core/regime-classifier.ts`  
+- **Transition Detector** — `src/core/transition-detector.ts`  
+
+---
+
+## **2. Atomic Measurement Packs**
+- **Atomic Operations Pack** — `plugins/atomic_operations/`  
+- **Atomic Field Component Pack** — `plugins/atomic_field_components/`  
+
+---
+
+## **3. Composite Measurement Packs**
+
+### **3.1 Thermodynamic Composites**
+- **Thermodynamic Composite Pack** — `plugins/thermodynamic_composites/`  
+  - Temperature (EOS)  
+  - Specific internal energy  
+  - Enthalpy  
+  - Entropy proxy  
+  - Sound speed  
+
+### **3.2 Transport Composites**
+- **Transport Composite Pack** — `plugins/transport_composites/`  
+  - Viscosity  
+  - Resistive diffusion  
+  - Conduction flux  
+  - Viscous heating  
+  - Ohmic heating  
+
+### **3.3 Kinematic Composites**
+- **Kinematic Composite Pack** — `plugins/kinematic_composites/`  
+  - Divergence  
+  - Vorticity  
+  - Shear  
+  - Strain  
+  - Gradient magnitude  
+
+### **3.4 Radiation Composites**
+- **Radiation Composite Pack** — `plugins/radiation_composites/`  
+  - Radiation pressure  
+  - Radiation energy density  
+  - Radiation flux  
+  - Cooling timescale  
+  - Optical depth  
+  - Eddington factor  
+
+---
+
+## **4. Capability Libraries**
+
+### **4.1 Thermodynamic**
+- **Thermodynamic Capability Library** — `plugins/thermodynamic_capability_library/`  
+  - Temperature regimes  
+  - Entropy regimes  
+  - Enthalpy regimes  
+  - Sound‑speed regimes  
+
+### **4.2 Transport**
+- **Transport Capability Library** — `plugins/transport_capability_library/`  
+  - Viscosity regimes  
+  - Resistivity regimes  
+  - Conduction regimes  
+  - Dissipation regimes  
+
+### **4.3 Kinematic**
+- **Kinematic Capability Library** — `plugins/kinematic_capability_library/`  
+  - Divergence regimes  
+  - Vorticity regimes  
+  - Shear regimes  
+  - Deformation regimes  
+
+### **4.4 Radiation**
+- **Radiation Capability Library** — `plugins/radiation_capability_library/`  
+  - Radiation pressure regimes  
+  - Optical depth regimes  
+  - Cooling regimes  
+  - Eddington regimes  
+  - Flux regimes  
+
+### **4.5 Coupling**
+- **Coupling Capability Library** — `plugins/coupling_capability_library/`  
+  - MHD–fluid coupling  
+  - Fluid–radiation coupling  
+  - Total coupling strength  
+
+---
+
+## **5. Regime Packs**
+- **Base Regime Pack** — `plugins/regimes/base/`  
+- **Coupling Regime Pack** — `plugins/regimes/coupling/`  
+- **Thermodynamic Regimes** — `plugins/regimes/thermodynamic/`  
+- **Transport Regimes** — `plugins/regimes/transport/`  
+- **Kinematic Regimes** — `plugins/regimes/kinematic/`  
+- **Radiation Regimes** — `plugins/regimes/radiation/`  
+
+---
+
+## **6. Regime Timeline Engine**
+- **Regime Timeline Engine** — `plugins/regime_timeline/engine.ts`  
+  - Epoch construction  
+  - Duration analysis  
+  - Transition mapping  
+  - Summary statistics  
+
+---
+
+## **7. Regime Explanation Pack**
+- **Regime Explanation Engine** — `plugins/regime_explanations/regime-explanation-engine.ts`  
+- **Explanation Templates** — `plugins/regime_explanations/explanations/*.json`  
+  - Short/long forms  
+  - Transition‑aware narratives  
+
+---
+
+## **8. Scenario Classification Layer**
+- **Scenario Classifier** — `plugins/scenario_classification/scenario-classifier.ts`  
+- **Scenario Definitions** — `plugins/scenario_classification/scenarios/*.json`  
+  - Shocks  
+  - Reconnection  
+  - Turbulence  
+  - Collapse  
+  - Jets  
+
+---
+
+## **9. Consolidated Pack (Orchestrator)**
+- **Package Manifest** — `physics_intelligence_pack/package.json`  
+- **Entrypoint** — `physics_intelligence_pack/src/index.ts`  
+  - Full pipeline:  
+    **state → metrics → capabilities → regimes → timeline → explanations → scenarios**
+
+---
+
+## **10. Project Metadata**
+- **Version:** USM‑v1.0  
+- **Architecture:** 11‑Layer Physics Intelligence Stack  
+- **Schema:** JSON‑Schema 2020‑12  
+- **Execution Model:** DAG‑based measurement evaluation  
+
+---
+
+## **11. Developer Utilities**
+- **Plugin Scaffolding** — `tools/scaffold-plugin.ts`  
+- **Schema Validator** — `tools/validate-schema.ts`  
+- **E2E Test Harness** — `tests/e2e/`  
+- **Synthetic Scenario Generator** — `tools/generate-synthetic-scenarios.ts`  
+
+---
+
+# **Next Step (Your Call)**  
+Which part do you want me to **build out first** as a fully‑implemented module?
+
+You can pick:  
+- Core Engine  
+- Atomic Packs  
+- Composite Packs  
+- Capability Libraries  
+- Regime Packs  
+- Timeline Engine  
+- Explanation Pack  
+- Scenario Layer  
+- Consolidated Pack
+
+Tell me where you want to begin and I’ll generate the full code, schemas, and folder structure.
